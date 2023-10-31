@@ -47,7 +47,8 @@ label start:
     "*este paisaje se siente raro*"
     "*Hmmmmm*"
     "*¿por que el paisaje se siente tan vacio?*"
-
+    scene bg schoolout
+    "*al fin llegamos...*"
     # Presenta las líneas del diálogo.
 
     

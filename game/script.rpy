@@ -7,7 +7,8 @@ define e = Character("Eileen")
 
 # El juego comienza aquí.
 define hugo = Character("hugo",color="#00FBFE")
-define hugomother = Character("hugomother",color="#f600fe")
+define alice = Character("alice",color="#f600fe")
+define kenia = Character("kenia",color="#ff7e7e")
 
 label start:
 
@@ -35,10 +36,10 @@ label start:
     scene bg hugoroom
     "*abres los ojos*"
     "*en definitiva tienes el control de hugo*"
-    show hugomother base
-    hugomother "Hugo ya es tarde no vas a ir a la esc-"
-    show hugomother happy
-    hugomother "Oh ya te has despertado, Genial! pense que ibas a tardar más"
+    show alice base
+    alice "Hugo ya es tarde no vas a ir a la esc-"
+    show alice happy
+    alice "Oh ya te has despertado, Genial! pense que ibas a tardar más"
     # Muestra un personaje: Se usa un marcador de posición. Es posible
     # reemplazarlo añadiendo un archivo llamado "eileen happy.png" al directorio
     # 'images'.
@@ -49,10 +50,24 @@ label start:
     "*¿por que el paisaje se siente tan vacio?*"
     scene bg schoolout
     "*al fin llegamos...*"
+    show kenia happy
+    kenia "Holi!"
     # Presenta las líneas del diálogo.
-
-    
-
+    menu:
+        "Hola ¿como estas?":
+            jump choice_open_kania1
+        "Hola e-e-estas linda jeje":
+            jump choice_open_kania2
+    label choice_open_kania1:
+        kenia "Bien todo bien jeje"
+        jump choice_common
+    label choice_open_kania2:
+        show kenia blush
+        kenia "ehhhh? ese es... un cumplido? ay jeje ¡gracias!"
+        show kenia happy
+        jump choice_common
+    label choice_common:
+        kenia "como sea hay que hacer varios trabajos asi que bueno entremps al salon"
     # Finaliza el juego:
 
     return

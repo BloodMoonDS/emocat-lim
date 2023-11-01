@@ -14,3 +14,5 @@ bundle.keystore
 progressive_download.txt
 errors.txt
 log.txt
+game/saves/
+

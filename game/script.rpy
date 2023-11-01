@@ -20,7 +20,7 @@ label start:
     "hmmm"
     "de igual manera tengo que despertar..."
     scene bg hugoroom
-
+    with fade
 
     show hugo tired
     hugo "..."
@@ -44,6 +44,7 @@ label start:
     # reemplazarlo añadiendo un archivo llamado "eileen happy.png" al directorio
     # 'images'.
     scene bg car
+    with fade
     "*vas de camino a la escuela, te sientes ansioso*"
     "*este paisaje se siente raro*"
     "*Hmmmmm*"
@@ -65,9 +66,23 @@ label start:
         show kenia blush
         kenia "ehhhh? ese es... un cumplido? ay jeje ¡gracias!"
         show kenia happy
-        jump choice_common
+        jump choice_love
     label choice_common:
-        kenia "como sea hay que hacer varios trabajos asi que bueno entremps al salon"
+        scene bg classroom
+        with fade
+        kenia "como sea hay que hacer varios trabajos asi que bueno entremos al salon"
+        show kenia happy
+        kenia "bien empezemos a hacer el proyecto"
+        jump game_end
+    label choice_love:
+        show kenia happy
+        kenia "bien hay que hacer varios trabajos asi vamonos"
+        scene bg classroom
+        with fade
+        kenia "hay que empezar el proyecto"
+        kenia "jeje..."
+        jump game_end
     # Finaliza el juego:
+    label game_end:
 
     return

@@ -1,0 +1,18 @@
+
+## ANDROID IGNORES
+
+./android.keystore
+./bundle.keystore
+android.keystore
+bundle.keystore
+
+## Renpy ignore defaults
+
+./log.txt
+./errors.txt
+./progressive_download.txt
+progressive_download.txt
+errors.txt
+log.txt
+game/saves/
+

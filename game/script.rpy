@@ -152,7 +152,10 @@ label start:
         label risk2:
 
         label date:
-            scene clear
+            scene bg blackbg
+            with fade
+            "*Te preparas para la cita*"
+            "*esperas a que todo salga genial*"
 
     label game_end:
 

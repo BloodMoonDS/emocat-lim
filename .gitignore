@@ -15,4 +15,6 @@ progressive_download.txt
 errors.txt
 log.txt
 game/saves/
-
+./game/saves/
+game/saves
+./game/saves

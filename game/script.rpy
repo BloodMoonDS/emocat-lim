@@ -147,7 +147,7 @@ label start:
         "pero..."
         "¿quieres hacer algo?"
         kenia "vamos a relajarnos un poco jeje"
-        "Vale! me agrada la idea"!
+        "Vale! me agrada la idea!"
         jump date
         label risk2:
 

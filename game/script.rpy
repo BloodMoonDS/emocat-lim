@@ -9,7 +9,7 @@ define e = Character("Eileen")
 define hugo = Character("hugo",color="#00FBFE")
 define alice = Character("alice",color="#f600fe")
 define kenia = Character("kenia",color="#ff7e7e")
-
+define camacho = Character("camacho",color="#73ff00")
 label start:
 
     # Muestra una imagen de fondo: Aquí se usa un marcador de posición por
@@ -95,6 +95,10 @@ label start:
         kenia "jeje..."
         "Y de que va el proyecto"
         kenia "Hay que hacer un cartel sobre... la verdad dijo de lo que sea jiji"
+        show camacho happy
+        show kenia think
+        camacho "¿Hola me puedo unir?"
+        
         jump game_end
     # Finaliza el juego:
     label love_project:

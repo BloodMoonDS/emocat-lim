@@ -156,7 +156,10 @@ label start:
             with fade
             "*Te preparas para la cita*"
             "*esperas a que todo salga genial*"
-
+            play music "audio/city.ogg"
+            scene bg dinnerrestaurant
+            with fade
+            "*Esperas*"
     label game_end:
 
     return

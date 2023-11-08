@@ -95,7 +95,7 @@ label start:
         kenia "jeje..."
         "Y de que va el proyecto"
         kenia "Hay que hacer un cartel sobre... la verdad dijo de lo que sea jiji"
-        show camacho happy
+        show camacho happy at right
         show kenia think
         camacho "¿Hola me puedo unir?"
         

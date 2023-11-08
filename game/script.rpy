@@ -150,7 +150,7 @@ label start:
         "Vale! me agrada la idea!"
         jump date
         label risk2:
-
+            jump game_end
         label date:
             scene bg blackbg
             with fade
@@ -160,6 +160,52 @@ label start:
             scene bg dinnerrestaurant
             with fade
             "*Esperas*"
+            show kenia dress smile
+            kenia "Hola jeje"
+            "H- Hola jeje"
+            kenia "¿Como me veo?"
+            menu:
+                "Te vez hermosa":
+                    jump youlookgreat_date
+                "Te vez bien jeje":
+                    jump youlooknice_date
+                "Estas horrible xd":
+                    jump youlookhorrible_date
+    label youlookgreat_date:
+        show kenia dress blush
+        kenia "¿en verdad? gracias jeje"
+        "si asi es jeje"
+
+        jump game_end
+    label youlooknice_date:
+        show kenia dress smile
+        kenia "Gracias tu tambien te vez bien"
+        "(deberia decir algo mas que eso)"
+        "(si algo tenia hugo es que era muy callado y nadamas se la pasaba en el telefono)"
+
+        jump game_end
+    label youlookhorrible_date:
+        show kenia dress angry
+        play music "audio/mus_notperfect_chase.ogg"
+        kenia ">:v"
+        "(creo que tampoco deberia de ser TAN sincero)"
+        "(en serio me pasé de sincero)"
+        "(creo que debo pedirle una disculpa)"
+        play music "audio/city.ogg"
+        kenia "bueno supongo que nadie es perfecto :C"
+        "*¿Le pides perdon?*"
+        menu:
+            "si":
+                jump doyouspareme_date
+            "no":
+                jump game_end
+        label doyouspareme_date:
+            "¿Me perdonas? me he pasado de sincero"
+            kenia "Si jeje yo tambien a veces me paso de sincera jeje"
+            "(tenemos tanto en comun...)"
+        jump game_end
+
+
     label game_end:
 
     return

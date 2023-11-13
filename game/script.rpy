@@ -160,7 +160,7 @@ label start:
             with fade
             "*Te preparas para la cita*"
             "*esperas a que todo salga genial*"
-            play music "audio/city.ogg"
+            play music "audio/date.ogg"
             scene bg dinnerrestaurant
             with fade
             "*Esperas*"
@@ -195,7 +195,7 @@ label start:
         "(creo que tampoco deberia de ser TAN sincero)"
         "(en serio me pasé de sincero)"
         "(creo que debo pedirle una disculpa)"
-        play music "audio/city.ogg"
+        play music "audio/date.ogg"
         kenia "bueno supongo que nadie es perfecto :C"
         "*¿Le pides perdon?*"
         menu:

@@ -120,3 +120,447 @@ translate Japanese start_3960aa9a:
     # "*al fin llegamos...*"
     ""
 
+# TODO: Translation updated at 2023-11-13 11:32
+
+# game/script.rpy:40
+translate Japanese start_f429ba49:
+
+    # alice "Hugo ya es tarde no vas a ir a la esc-"
+    alice ""
+
+# game/script.rpy:42
+translate Japanese start_efb6b2cf:
+
+    # alice "Oh ya te has despertado, Genial! pense que ibas a tardar más"
+    alice ""
+
+# game/script.rpy:56
+translate Japanese start_ca1ac4ba:
+
+    # kenia "Holi!"
+    kenia ""
+
+# game/script.rpy:57
+translate Japanese start_c244a5e6:
+
+    # "*Sentiriras mariposas en el estomago*"
+    ""
+
+# game/script.rpy:65
+translate Japanese choice_open_kania1_a48dff2e:
+
+    # kenia "Bien todo bien jeje"
+    kenia ""
+
+# game/script.rpy:69
+translate Japanese choice_open_kania2_e41a14c4:
+
+    # kenia "ehhhh? ese es... un cumplido? ay jeje ¡gracias!"
+    kenia ""
+
+# game/script.rpy:75
+translate Japanese choice_common_01ca8f49:
+
+    # kenia "como sea hay que hacer varios trabajos asi que bueno entremos al salon"
+    kenia ""
+
+# game/script.rpy:77
+translate Japanese choice_common_fea15d2d:
+
+    # kenia "bien empezemos a hacer el proyecto"
+    kenia ""
+
+# game/script.rpy:78
+translate Japanese choice_common_e6dc3767:
+
+    # "Y de que va el proyecto"
+    ""
+
+# game/script.rpy:79
+translate Japanese choice_common_a58bb209:
+
+    # kenia "De lo que sea"
+    kenia ""
+
+# game/script.rpy:90
+translate Japanese choice_love_d57bfdf3:
+
+    # kenia "bien hay que hacer varios trabajos asi vamonos"
+    kenia ""
+
+# game/script.rpy:94
+translate Japanese choice_love_d40e0f2e:
+
+    # kenia "hay que empezar el proyecto"
+    kenia ""
+
+# game/script.rpy:95
+translate Japanese choice_love_ce62bca8:
+
+    # kenia "jeje..."
+    kenia ""
+
+# game/script.rpy:96
+translate Japanese choice_love_e6dc3767:
+
+    # "Y de que va el proyecto"
+    ""
+
+# game/script.rpy:97
+translate Japanese choice_love_bda70116:
+
+    # kenia "Hay que hacer un cartel sobre... la verdad dijo de lo que sea jiji"
+    kenia ""
+
+# game/script.rpy:100
+translate Japanese choice_love_336d3af1:
+
+    # camacho "¿Hola me puedo unir?"
+    camacho ""
+
+# game/script.rpy:110
+translate Japanese crisis_58f4a8c4:
+
+    # kenia "Hmmmmmm..."
+    kenia ""
+
+# game/script.rpy:111
+translate Japanese crisis_81070b5d:
+
+    # kenia "Esta interesante el tema"
+    kenia ""
+
+# game/script.rpy:112
+translate Japanese crisis_440981df:
+
+    # "*Se te hace muy atractiva pero... al tener los recuerdos de hugo...*"
+    ""
+
+# game/script.rpy:113
+translate Japanese crisis_4a17f908:
+
+    # "*sientes que algo va a salir mal*"
+    ""
+
+# game/script.rpy:114
+translate Japanese crisis_de629c8e:
+
+    # "*¿Te arriesgas?*"
+    ""
+
+# game/script.rpy:127
+translate Japanese risk1_aecb86f6:
+
+    # "Oye quiero decirte algo..."
+    ""
+
+# game/script.rpy:128
+translate Japanese risk1_97a98e80:
+
+    # kenia "¿que sucede?"
+    kenia ""
+
+# game/script.rpy:129
+translate Japanese risk1_f0c43c0d:
+
+    # kenia "¿todo bien?"
+    kenia ""
+
+# game/script.rpy:130
+translate Japanese risk1_7aeaeb42:
+
+    # "Quiero decirte que..."
+    ""
+
+# game/script.rpy:131
+translate Japanese risk1_393e7050:
+
+    # kenia "uh?"
+    kenia ""
+
+# game/script.rpy:132
+translate Japanese risk1_af725f54:
+
+    # "Te me haces atractiva jeje"
+    ""
+
+# game/script.rpy:133
+translate Japanese risk1_b232daac:
+
+    # "*Sonries sonrojado y nervioso*"
+    ""
+
+# game/script.rpy:136
+translate Japanese risk1_b34c5bf8:
+
+    # kenia "..."
+    kenia ""
+
+# game/script.rpy:137
+translate Japanese risk1_ee63b5e6:
+
+    # kenia "jeje"
+    kenia ""
+
+# game/script.rpy:138
+translate Japanese risk1_15757722:
+
+    # kenia "ehhh sabes yo tambien queria decirte algo jeje"
+    kenia ""
+
+# game/script.rpy:139
+translate Japanese risk1_f2d9915f:
+
+    # kenia "hmmmmm"
+    kenia ""
+
+# game/script.rpy:140
+translate Japanese risk1_00835e8a:
+
+    # kenia "ehhhh..."
+    kenia ""
+
+# game/script.rpy:142
+translate Japanese risk1_a3b5ea01:
+
+    # kenia "Tu tambien me gustas jeje"
+    kenia ""
+
+# game/script.rpy:143
+translate Japanese risk1_2a818e21:
+
+    # kenia "solo que no sabia como decirtelo jeje"
+    kenia ""
+
+# game/script.rpy:144
+translate Japanese risk1_c399df5c:
+
+    # kenia "a mi me cuesta decir lo que siento por traumas"
+    kenia ""
+
+# game/script.rpy:145
+translate Japanese risk1_dbb8a4f8:
+
+    # "oh..."
+    ""
+
+# game/script.rpy:146
+translate Japanese risk1_32907d89:
+
+    # kenia "ehhh"
+    kenia ""
+
+# game/script.rpy:147
+translate Japanese risk1_ccc6557e:
+
+    # "¿sabes?"
+    ""
+
+# game/script.rpy:148
+translate Japanese risk1_fa2df0ad:
+
+    # "Yo dudé si en decirtelo o no jeje"
+    ""
+
+# game/script.rpy:149
+translate Japanese risk1_8c1596b7:
+
+    # "Tambien tengo traumas"
+    ""
+
+# game/script.rpy:150
+translate Japanese risk1_e7d7cc58:
+
+    # "unos bastante fuertes"
+    ""
+
+# game/script.rpy:151
+translate Japanese risk1_ca1f7c1e:
+
+    # "pero..."
+    ""
+
+# game/script.rpy:152
+translate Japanese risk1_2166613c:
+
+    # "¿quieres hacer algo?"
+    ""
+
+# game/script.rpy:153
+translate Japanese risk1_4b549a05:
+
+    # kenia "vamos a relajarnos un poco jeje"
+    kenia ""
+
+# game/script.rpy:154
+translate Japanese risk1_1640b2ae:
+
+    # "Vale! me agrada la idea!"
+    ""
+
+# game/script.rpy:161
+translate Japanese date_4caeb49a:
+
+    # "*Te preparas para la cita*"
+    ""
+
+# game/script.rpy:162
+translate Japanese date_5f2f9883:
+
+    # "*esperas a que todo salga genial*"
+    ""
+
+# game/script.rpy:166
+translate Japanese date_6a6aea3e:
+
+    # "*Esperas*"
+    ""
+
+# game/script.rpy:168
+translate Japanese date_dc7dc876:
+
+    # kenia "Hola jeje"
+    kenia ""
+
+# game/script.rpy:169
+translate Japanese date_bc32b829:
+
+    # "H- Hola jeje"
+    ""
+
+# game/script.rpy:170
+translate Japanese date_d98130be:
+
+    # kenia "¿Como me veo?"
+    kenia ""
+
+# game/script.rpy:180
+translate Japanese youlookgreat_date_6ae4e44c:
+
+    # kenia "¿en verdad? gracias jeje"
+    kenia ""
+
+# game/script.rpy:181
+translate Japanese youlookgreat_date_786d7054:
+
+    # "si asi es jeje"
+    ""
+
+# game/script.rpy:186
+translate Japanese youlooknice_date_22215f19:
+
+    # kenia "Gracias tu tambien te vez bien"
+    kenia ""
+
+# game/script.rpy:187
+translate Japanese youlooknice_date_f5716ef9:
+
+    # "(deberia decir algo mas que eso)"
+    ""
+
+# game/script.rpy:188
+translate Japanese youlooknice_date_6d59858b:
+
+    # "(si algo tenia hugo es que era muy callado y nadamas se la pasaba en el telefono)"
+    ""
+
+# game/script.rpy:194
+translate Japanese youlookhorrible_date_240bdc2d:
+
+    # kenia ">:v"
+    kenia ""
+
+# game/script.rpy:195
+translate Japanese youlookhorrible_date_c6553c90:
+
+    # "(creo que tampoco deberia de ser TAN sincero)"
+    ""
+
+# game/script.rpy:196
+translate Japanese youlookhorrible_date_f87f3140:
+
+    # "(en serio me pasé de sincero)"
+    ""
+
+# game/script.rpy:197
+translate Japanese youlookhorrible_date_4a5e6319:
+
+    # "(creo que debo pedirle una disculpa)"
+    ""
+
+# game/script.rpy:199
+translate Japanese youlookhorrible_date_56d16ff8:
+
+    # kenia "bueno supongo que nadie es perfecto :C"
+    kenia ""
+
+# game/script.rpy:200
+translate Japanese youlookhorrible_date_3ad4beb0:
+
+    # "*¿Le pides perdon?*"
+    ""
+
+# game/script.rpy:207
+translate Japanese doyouspareme_date_285e2c8e:
+
+    # "¿Me perdonas? me he pasado de sincero"
+    ""
+
+# game/script.rpy:208
+translate Japanese doyouspareme_date_ec4489cf:
+
+    # kenia "Si jeje yo tambien a veces me paso de sincera jeje"
+    kenia ""
+
+# game/script.rpy:209
+translate Japanese doyouspareme_date_dea9f7c8:
+
+    # "(tenemos tanto en comun...)"
+    ""
+
+translate Japanese strings:
+
+    # game/script.rpy:59
+    old "Hola ¿como estas?"
+    new ""
+
+    # game/script.rpy:59
+    old "Hola e-e-estas linda jeje"
+    new ""
+
+    # game/script.rpy:80
+    old "Crisis Existenciales"
+    new ""
+
+    # game/script.rpy:80
+    old "No se"
+    new ""
+
+    # game/script.rpy:80
+    old "pensemos eso mas tarde"
+    new ""
+
+    # game/script.rpy:115
+    old "Si"
+    new ""
+
+    # game/script.rpy:171
+    old "Te vez hermosa"
+    new ""
+
+    # game/script.rpy:171
+    old "Te vez bien jeje"
+    new ""
+
+    # game/script.rpy:171
+    old "Estas horrible xd"
+    new ""
+
+    # game/script.rpy:201
+    old "si"
+    new ""
+
+    # game/script.rpy:201
+    old "no"
+    new ""
+

@@ -98,7 +98,28 @@ label start:
         show camacho happy at right
         show kenia think
         camacho "¿Hola me puedo unir?"
-        
+        menu:
+            "Si":
+                jump camacho_join_yes
+            "No":
+                jump Camacho_join_no
+
+    label camacho_join_yes:
+        "¡Vale! Me agrada la idea"
+        camacho "Vale jeje"
+    label Camacho_join_no:
+        "No, Creo que estamos mejor los dos solos"
+        camacho "El hugo ya tiene novia ¿eh? jeje"
+        hide camacho happy
+        kenia "..."
+        "*tomas en cuenta la hazaña de camacho*"
+        "*¿Te arriesgas?*"
+        menu:
+            "Si":
+                jump risk1
+            "No":
+                jump risk2
+
         jump game_end
     # Finaliza el juego:
     label love_project:

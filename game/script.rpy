@@ -66,6 +66,7 @@ label start:
         kenia "Bien todo bien jeje"
         jump choice_common
     label choice_open_kania2:
+        play sound "audio/SFX/choice_good2.ogg"
         show kenia blush
         kenia "ehhhh? ese es... un cumplido? ay jeje ¡gracias!"
         show kenia happy
@@ -106,6 +107,7 @@ label start:
                 jump Camacho_join_no
 
     label camacho_join_yes:
+        play sound "audio/SFX/choice_good.ogg"
         "¡Vale! Me agrada la idea"
         camacho "Vale jeje"
     label Camacho_join_no:
@@ -146,6 +148,7 @@ label start:
 
     
     label risk1:
+        play sound "audio/SFX/choice_good1.ogg"
         "Oye quiero decirte algo..."
         kenia "¿que sucede?"
         kenia "¿todo bien?"

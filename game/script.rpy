@@ -11,7 +11,7 @@ define alice = Character("alice",color="#f600fe")
 define kenia = Character("kenia",color="#ff7e7e")
 define camacho = Character("camacho",color="#73ff00")
 label start:
-
+    play music "audio/onestop (Sony Ericson) .ogg"
     # Muestra una imagen de fondo: Aquí se usa un marcador de posición por
     # defecto. Es posible añadir un archivo en el directorio 'images' con el
     # nombre "bg room.png" or "bg room.jpg" para que se muestre aquí.
@@ -31,6 +31,7 @@ label start:
     show hugo happy
     hugo "¿puedes ayudarme?"
     hugo "En ese caso te doy el control de mi cuerpo"
+    stop music
     scene bg blackbg
     "*de la nada sientes como tomas el control de hugo y puedes ayudar a controlar sus pensamientos*"
     scene bg hugoroom

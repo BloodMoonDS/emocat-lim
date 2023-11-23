@@ -215,7 +215,7 @@ label start:
         jump game_end
     label youlookhorrible_date:
         show kenia dress angry
-        play music "audio/mus_notperfect_chase.ogg"
+        play music "audio/Music/B/mus_notperfect_chase.ogg"
         kenia ">:v"
         "(creo que tampoco deberia de ser TAN sincero)"
         "(en serio me pasé de sincero)"

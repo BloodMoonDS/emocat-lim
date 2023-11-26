@@ -96,7 +96,7 @@ init python:
             return
 
         if event == "show": #if text's being written by character, spam typing sounds until the text ends
-            snd = sounds[3]
+            snd = sounds[2]
             renpy.sound.play(snd)
             renpy.sound.queue(snd)
             renpy.sound.queue(snd)

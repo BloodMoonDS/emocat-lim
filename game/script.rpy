@@ -3,13 +3,187 @@
 # Declara los personajes usados en el juego como en el ejemplo:
 
 define e = Character("Eileen")
+define sounds = ["audio/Voices/voice_hugo.ogg","audio/Voices/voice_alice.ogg","audio/Voices/voice_kenia.ogg","audio/Voices/voice_camacho.ogg"]
 
+init python:
+    def type_sound(event, interact=True, **kwargs):
+        if not interact:
+            return
+
+        if event == "show": #if text's being written by character, spam typing sounds until the text ends
+            snd = sounds[0]
+            renpy.sound.play(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            
+        elif event == "slow_done" or event == "end":
+            renpy.sound.stop()
+            #dumb way to do it but it works, dunno if it causes memory leaks but it's almost 6AM :v
+    def type_sound_Alice(event, interact=True, **kwargs):
+        if not interact:
+            return
+
+        if event == "show": #if text's being written by character, spam typing sounds until the text ends
+            snd = sounds[1]
+            renpy.sound.play(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            
+           
+
+
+        elif event == "slow_done" or event == "end":
+            renpy.sound.stop()
+        
+    def type_sound_kenia(event, interact=True, **kwargs):
+        if not interact:
+            return
+
+        if event == "show": #if text's being written by character, spam typing sounds until the text ends
+            snd = sounds[3]
+            renpy.sound.play(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            
+           
+
+
+        elif event == "slow_done" or event == "end":
+            renpy.sound.stop()
+
+    def type_sound_camacho(event, interact=True, **kwargs):
+        if not interact:
+            return
+
+        if event == "show": #if text's being written by character, spam typing sounds until the text ends
+            snd = sounds[3]
+            renpy.sound.play(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            
+           
+
+
+        elif event == "slow_done" or event == "end":
+            renpy.sound.stop()
 
 # El juego comienza aquí.
-define hugo = Character("hugo",color="#00FBFE")
-define alice = Character("alice",color="#f600fe")
-define kenia = Character("kenia",color="#ff7e7e")
-define camacho = Character("camacho",color="#73ff00")
+define hugo = Character("hugo",color="#00FBFE",callback=type_sound)
+define alice = Character("alice",color="#f600fe",callback=type_sound_Alice)
+define kenia = Character("kenia",color="#ff7e7e",callback=type_sound_kenia)
+define camacho = Character("camacho",color="#73ff00",callback=type_sound_camacho)
 label start:
     play music "audio/onestop (Sony Ericson) .ogg"
     # Muestra una imagen de fondo: Aquí se usa un marcador de posición por

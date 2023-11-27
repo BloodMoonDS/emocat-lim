@@ -197,7 +197,7 @@ init python:
     build.classify('**/.blend1', None)
     build.classify('**/.html', None)
     build.classify('**/.htm', None)
-    
+    build.classify('**/.git', None)
     ## Para archivar, se clasifican como 'archive'.
 
     # build.classify('game/**.png', 'archive')

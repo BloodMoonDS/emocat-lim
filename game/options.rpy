@@ -24,7 +24,7 @@ define gui.show_name = True
 
 ## Versión del juego.
 
-define config.version = "1.0"
+define config.version = "0.0.3"
 
 
 ## Texto situado en la pantalla 'Acerca de' del juego. Sitúa el texto entre
@@ -187,7 +187,17 @@ init python:
     build.classify('**/.**', None)
     build.classify('**/#**', None)
     build.classify('**/thumbs.db', None)
-
+    build.classify('art/', None)
+    build.classify('docs/', None)
+    build.classify('.vscode/', None)
+    build.classify('game/saves/', None)
+    build.classify('**/.pov', None)
+    build.classify('**/.blend', None)
+    build.classify('**/.fla', None)
+    build.classify('**/.blend1', None)
+    build.classify('**/.html', None)
+    build.classify('**/.htm', None)
+    
     ## Para archivar, se clasifican como 'archive'.
 
     # build.classify('game/**.png', 'archive')

@@ -191,6 +191,7 @@ init python:
     build.classify('docs/', None)
     build.classify('.vscode/', None)
     build.classify('game/saves/', None)
+    build.classify('.git/', None)
     build.classify('**/.pov', None)
     build.classify('**/.blend', None)
     build.classify('**/.fla', None)

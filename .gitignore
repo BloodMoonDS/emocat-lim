@@ -18,3 +18,7 @@ game/saves/
 ./game/saves/
 game/saves
 ./game/saves
+
+## File ignore
+**.bak
+**.rpyc

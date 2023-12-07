@@ -199,6 +199,17 @@ init python:
     build.classify('**/.html', None)
     build.classify('**/.htm', None)
     build.classify('**/.git', None)
+    build.classify('blends/', None)
+    build.classify('blender/', None)
+    build.classify('blender/', None)
+    build.classify('./blender/', None)
+    build.classify('./POVRAY/', None)
+    build.classify('./docs/', None)
+    build.classify('./readme/', None)
+    build.classify('/docs/', None)
+    build.classify('/.vscode/', None)
+    build.classify('/game/saves/', None)
+    build.classify('/.git/', None)
     ## Para archivar, se clasifican como 'archive'.
 
     # build.classify('game/**.png', 'archive')

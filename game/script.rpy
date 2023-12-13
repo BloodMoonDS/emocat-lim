@@ -519,6 +519,7 @@ label start:
         jump moviewatch
 
         label moviewatch:
+            play music "audio/Music/B/mus_kindandfair.ogg"
             scene bg keniahouse
             show kenia Happy
             kenia "muy bien preparemos todo para ver una peli jeje"

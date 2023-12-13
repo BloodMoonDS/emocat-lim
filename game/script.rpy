@@ -3,7 +3,7 @@
 # Declara los personajes usados en el juego como en el ejemplo:
 
 define e = Character("Eileen")
-define sounds = ["audio/Voices/voice_hugo.ogg","audio/Voices/voice_alice.ogg","audio/Voices/voice_kenia.ogg","audio/Voices/voice_camacho.ogg","audio/Voices/voice_nick.ogg"]
+define sounds = ["audio/Voices/voice_hugo.ogg","audio/Voices/voice_alice.ogg","audio/Voices/voice_kenia.ogg","audio/Voices/voice_camacho.ogg","audio/Voices/voice_nick.ogg","audio/Voices/Voice_Leo.ogg"]
 
 init python:
     def type_sound(event, interact=True, **kwargs):
@@ -222,12 +222,56 @@ init python:
         elif event == "slow_done" or event == "end":
             renpy.sound.stop()
 
+    def type_sound_leo(event, interact=True, **kwargs):
+            if not interact:
+                return
+
+            if event == "show": #if text's being written by character, spam typing sounds until the text ends
+                snd = sounds[5]
+                renpy.sound.play(snd)
+                renpy.sound.queue(snd)
+                renpy.sound.queue(snd)
+                renpy.sound.queue(snd)
+                renpy.sound.queue(snd)
+                renpy.sound.queue(snd)
+                renpy.sound.queue(snd)
+                renpy.sound.queue(snd)
+                renpy.sound.queue(snd)
+                renpy.sound.queue(snd)
+                renpy.sound.queue(snd)
+                renpy.sound.queue(snd)
+                renpy.sound.queue(snd)
+                renpy.sound.queue(snd)
+                renpy.sound.queue(snd)
+                renpy.sound.queue(snd)
+                renpy.sound.queue(snd)
+                renpy.sound.queue(snd)
+                renpy.sound.queue(snd)
+                renpy.sound.queue(snd)
+                renpy.sound.queue(snd)
+                renpy.sound.queue(snd)
+                renpy.sound.queue(snd)
+                renpy.sound.queue(snd)
+                renpy.sound.queue(snd)
+                renpy.sound.queue(snd)
+                renpy.sound.queue(snd)
+                renpy.sound.queue(snd)
+                renpy.sound.queue(snd)
+                renpy.sound.queue(snd)
+                renpy.sound.queue(snd)
+                
+            
+
+
+            elif event == "slow_done" or event == "end":
+                renpy.sound.stop()
 # El juego comienza aquí.
 define hugo = Character("hugo",color="#00FBFE",callback=type_sound)
 define nick = Character("Nick",color="#fe0000",callback=type_sound_nick)
 define alice = Character("alice",color="#f600fe",callback=type_sound_Alice)
 define kenia = Character("kenia",color="#ff7e7e",callback=type_sound_kenia)
 define camacho = Character("camacho",color="#73ff00",callback=type_sound_camacho)
+define Leo = Character("Leo",color="#ff9900",callback=type_sound_leo)
 label start:
     play music "audio/onestop.ogg" volume 0.5
     # Muestra una imagen de fondo: Aquí se usa un marcador de posición por
@@ -475,6 +519,7 @@ label start:
         jump moviewatch
 
         label moviewatch:
+            play music "audio/Music/B/mus_kindandfair.ogg"
             scene bg keniahouse
             show kenia Happy
             kenia "muy bien preparemos todo para ver una peli jeje"
@@ -499,9 +544,22 @@ label start:
             label nick_join_yes:
                 show nick super happy at left
                 nick "gracias jeje"
+                jump work_start
             label nick_join_no:
                 show nick cry
                 nick "oh...."
+                jump not_nick
+    label work_start:
+        "jeje"
+        nick "¿Puedo meter a Leo?"
+        kenia "Vale jeje"
+        play music "audio/Fight.ogg"
+        hide nick
+        show leo base at left
+        Leo "Hola"
+        jump game_end
+    label not_nick:
+
     label game_end:
 
     return

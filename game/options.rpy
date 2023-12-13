@@ -54,8 +54,8 @@ define config.has_voice = True
 ## Para permitir al usuario probar el volumen de los canales de sonido o voz,
 ## descomenta la línea más abajo y ajústala a un sonido de ejemplo.
 
-# define config.sample_sound = "sample-sound.ogg"
-# define config.sample_voice = "sample-voice.ogg"
+define config.sample_sound = "audio/SFX/sfx_collect"
+## define config.sample_voice = "sample-voice.ogg"
 
 
 ## Descomenta la línea siguiente para ajustar un archivo de audio que sonará en
@@ -84,12 +84,12 @@ define config.intra_transition = dissolve
 
 ## Transición tras la carga de una partida.
 
-define config.after_load_transition = None
+define config.after_load_transition = fade
 
 
 ## Transición de acceso al menú principal tras finalizar el juego.
 
-define config.end_game_transition = None
+define config.end_game_transition = fade
 
 
 ## No existe la variable que ajusta la transición cuando el juego comienza. Para

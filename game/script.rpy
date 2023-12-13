@@ -3,7 +3,7 @@
 # Declara los personajes usados en el juego como en el ejemplo:
 
 define e = Character("Eileen")
-define sounds = ["audio/Voices/voice_hugo.ogg","audio/Voices/voice_alice.ogg","audio/Voices/voice_kenia.ogg","audio/Voices/voice_camacho.ogg"]
+define sounds = ["audio/Voices/voice_hugo.ogg","audio/Voices/voice_alice.ogg","audio/Voices/voice_kenia.ogg","audio/Voices/voice_camacho.ogg","audio/Voices/voice_nick.ogg"]
 
 init python:
     def type_sound(event, interact=True, **kwargs):
@@ -178,14 +178,58 @@ init python:
 
         elif event == "slow_done" or event == "end":
             renpy.sound.stop()
+    def type_sound_nick(event, interact=True, **kwargs):
+        if not interact:
+            return
+
+        if event == "show": #if text's being written by character, spam typing sounds until the text ends
+            snd = sounds[4]
+            renpy.sound.play(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            renpy.sound.queue(snd)
+            
+           
+
+
+        elif event == "slow_done" or event == "end":
+            renpy.sound.stop()
 
 # El juego comienza aquí.
 define hugo = Character("hugo",color="#00FBFE",callback=type_sound)
+define nick = Character("Nick",color="#fe0000",callback=type_sound_nick)
 define alice = Character("alice",color="#f600fe",callback=type_sound_Alice)
 define kenia = Character("kenia",color="#ff7e7e",callback=type_sound_kenia)
 define camacho = Character("camacho",color="#73ff00",callback=type_sound_camacho)
 label start:
-    play music "audio/onestop (Sony Ericson) .ogg"
+    play music "audio/onestop.ogg" volume 0.5
     # Muestra una imagen de fondo: Aquí se usa un marcador de posición por
     # defecto. Es posible añadir un archivo en el directorio 'images' con el
     # nombre "bg room.png" or "bg room.jpg" para que se muestre aquí.
@@ -219,7 +263,7 @@ label start:
     # reemplazarlo añadiendo un archivo llamado "eileen happy.png" al directorio
     # 'images'.
     scene bg car
-    play music "audio/city.ogg" 
+    play music "audio/city.ogg"  volume 0.5
     with fade
     "*vas de camino a la escuela, te sientes ansioso*"
     "*este paisaje se siente raro*"
@@ -257,9 +301,9 @@ label start:
             "Crisis Existenciales":
                 jump crisis
             "No se":
-                jump idk_notlove
+                jump work
             "pensemos eso mas tarde":
-                jump laternotlove
+                jump work
         jump game_end
     label choice_love:
         show kenia happy
@@ -284,6 +328,7 @@ label start:
         play sound "audio/SFX/choice_good.ogg"
         "¡Vale! Me agrada la idea"
         camacho "Vale jeje"
+        jump work_camacho
     label Camacho_join_no:
         "No, Creo que estamos mejor los dos solos"
         camacho "El hugo ya tiene novia ¿eh? jeje"
@@ -353,7 +398,8 @@ label start:
         "Vale! me agrada la idea!"
         jump date
         label risk2:
-            jump game_end
+            "hehehe..."
+        jump work
         label date:
             scene bg blackbg
             with fade
@@ -379,36 +425,83 @@ label start:
         kenia "¿en verdad? gracias jeje"
         "si asi es jeje"
 
-        jump game_end
+        jump date_continue
     label youlooknice_date:
         show kenia dress smile
         kenia "Gracias tu tambien te vez bien"
         "(deberia decir algo mas que eso)"
         "(si algo tenia hugo es que era muy callado y nadamas se la pasaba en el telefono)"
-
-        jump game_end
+        jump date_continue
     label youlookhorrible_date:
         show kenia dress angry
+        play sound "audio/SFX/choice_bad2.ogg"
         play music "audio/Music/B/mus_notperfect_chase.ogg"
         kenia ">:v"
         "(creo que tampoco deberia de ser TAN sincero)"
         "(en serio me pasé de sincero)"
         "(creo que debo pedirle una disculpa)"
         play music "audio/date.ogg"
+        show kenia dress smile
         kenia "bueno supongo que nadie es perfecto :C"
         "*¿Le pides perdon?*"
         menu:
             "si":
                 jump doyouspareme_date
             "no":
-                jump game_end
+                jump dontspareher
         label doyouspareme_date:
             "¿Me perdonas? me he pasado de sincero"
             kenia "Si jeje yo tambien a veces me paso de sincera jeje"
             "(tenemos tanto en comun...)"
+            jump date_continue
+
         jump game_end
+        label dontspareher:
+        play sound "audio/SFX/bad_decision.ogg"
+        "..."
+        scene bg hugoroom depressed
+        play music "audio/Music/B/mus_act9.ogg"
+        "(por que soy asi de idiota, no puedo creerlo)"
+        scene bg blackbg
+        "BAD ENDING: Hugo La ha regado con su posible primer pareja"
+        "Y eso es TU CULPA"
+        jump game_end
+        label date_continue:
+            kenia "jijijiji"
+            "Que quieres hacer?"
+            kenia "Vamos a ver una pelicula va?"
+            "vale me agrada la idea"
 
+        jump moviewatch
 
+        label moviewatch:
+            scene bg keniahouse
+            show kenia Happy
+            kenia "muy bien preparemos todo para ver una peli jeje"
+            jump game_end
+        label work:
+        show kenia Happy
+        kenia "Bueno a ponernos a trabajar"
+        kenia "hagamoslo de animales salvajes"
+        label work_camacho:
+            camacho "Bueno lo hacemos de.."
+            show kenia happy
+            kenia "Animales salvajes"
+            "Vale me agrada la idea"
+            camacho "A mi tambien me gussta la idea jeje"
+            show nick happy at left
+            nick "Hola me puedo unir?"
+            menu:
+                "Si":
+                    jump nick_join_yes
+                "No":
+                    jump nick_join_no
+            label nick_join_yes:
+                show nick super happy at left
+                nick "gracias jeje"
+            label nick_join_no:
+                show nick cry
+                nick "oh...."
     label game_end:
 
     return

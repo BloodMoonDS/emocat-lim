@@ -519,10 +519,11 @@ label start:
         jump moviewatch
 
         label moviewatch:
-            play music "audio/Music/B/mus_kindandfair.ogg"
+            play music "audio/gallery.mp3"
             scene bg keniahouse
             show kenia Happy
             kenia "muy bien preparemos todo para ver una peli jeje"
+            "jsjs"
             jump game_end
         label work:
         show kenia Happy
@@ -530,7 +531,7 @@ label start:
         kenia "hagamoslo de animales salvajes"
         label work_camacho:
             camacho "Bueno lo hacemos de.."
-            show kenia happy
+            show kenia Happy
             kenia "Animales salvajes"
             "Vale me agrada la idea"
             camacho "A mi tambien me gussta la idea jeje"
